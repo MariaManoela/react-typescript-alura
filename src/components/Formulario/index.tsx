@@ -17,6 +17,8 @@ class Formulario extends React.Component {
                     <input 
                         type="text"
                         name="tarefa"
+                        value={this.state.tarefa}
+                        onChange={evento => this.setState({ ...this.state, tarefa: evento.target.value })}
                         id="tarefa"
                         placeholder="O que você quer estudar?"
                         required 
